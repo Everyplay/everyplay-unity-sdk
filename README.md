@@ -1,50 +1,13 @@
 Everyplay SDK/Unity - Release Notes
 ===================================
 
-For platform specific changes, keep scrolling down
+Unity core and platform specific changes (if any) are separated
 
-### 1810-1130 - Aug 27th 2014
+## Unity 1810-1130 - Aug 27th 2014
 
 - Now supports creating iOS/Xcode project on Windows
 
-### 1801-1120 - June 17th 2014
-
-- Fixed iOS build error against Unity 4.5.1
-
-- Fixed a potential exception error with Xcode project editor
-
-- Updated WWW constructor parameters for Unity 4.5+
-
-### 1801-1100 - May 20th 2014
-
-- Improved Facebook integration, this requires the use of "Facebook for Unity" asset
-  available from the Asset Store
-
-- Lots of internal plugin changes and file location changes for better Unity integration,
-  the migration should be seamless without removing previous assets
-
-- New prefables integration. Instead of dragging a prefab to your first scene
-  you may use the Edit / Everyplay Settings menu to enable Everyplay and to
-  set your game credentials. This also allows you to temporarily disable
-  Everyplay without removing the package
-
-- Double check that clientId, secret and redirectURI settings have merged into
-  the new Edit / Everyplay Settings menu after upgrading
-
-- Calling Everyplay through the SharedInstance is now deprecated. You may still
-  use the old way, but the recommended way is to call Everyplay.methodName
-
-- Added checkboxes to new Everyplay settings menu for enabling Everyplay per
-  platform (iOS/Android)
-
-- Old test button functionality in Everyplay.prefab has been moved to
-  Plugins/Everyplay/Helpers/EveryplayTest.prefab. A new simplified one can
-  be enabled through Edit / Everyplay Settings menu
-
-Everyplay SDK/iOS - Release Notes
-=================================
-
-### v1.8.1 - Aug 27th 2014 (build 1810)
+### iOS v1.8.1 - Aug 27th 2014 (build 1810)
 
 - Major audio internals rework for future features, optimized for iOS 7
 
@@ -76,7 +39,80 @@ Everyplay SDK/iOS - Release Notes
 - Video editor now adds FaceCam recording UI buttons only after
   iOS user permission check
 
-### v1.8.0 - May 14th 2014 (build 1801)
+### Android v1.1.3 - Aug 27th 2014 (build 1130)
+
+- Some devices and applications had image quality issues/artifacts
+  before video encoding step, fixed
+
+- Starting recording with HUD-less enabled could have caused frame
+  glitch once while starting, fixed
+
+- Fix network retry handling in Everyplay splash screen
+
+- Analytics improvements
+
+## Unity 1801-1120 - June 17th 2014
+
+- Fixed iOS build error against Unity 4.5.1
+
+- Fixed a potential exception error with Xcode project editor
+
+- Updated WWW constructor parameters for Unity 4.5+
+
+### Android v1.1.2 - June 17th 2014 (build 1120)
+
+- Fixed recording from not working if changing MSAA anti-aliasing
+  state during runtime
+
+- Fixed a potential Qualcomm specific issue with rendering
+  modal share dialog borders
+
+- Improved upload handling
+
+- Improved videoplayer thread safety
+
+### Android v1.1.1 - May 20th 2014 (build 1110)
+
+- Workaround for ImgTec PowerVR GPU driver behaviour that
+  could cause entire device to freeze after initialization
+
+- Fix videoplayer seeking from causing a crash on some
+  devices with faulty drivers
+
+- Fix for potential video encoding thread hanging on some
+  devices like Samsung Galaxy S3
+
+- Improved sending onEveryplayRecordingStarted listener events
+
+- Add onEveryplayAccountDidChange listener event
+
+## Unity 1801-1100 - May 20th 2014
+
+- Improved Facebook integration, this requires the use of "Facebook for Unity" asset
+  available from the Asset Store
+
+- Lots of internal plugin changes and file location changes for better Unity integration,
+  the migration should be seamless without removing previous assets
+
+- New prefables integration. Instead of dragging a prefab to your first scene
+  you may use the Edit / Everyplay Settings menu to enable Everyplay and to
+  set your game credentials. This also allows you to temporarily disable
+  Everyplay without removing the package
+
+- Double check that clientId, secret and redirectURI settings have merged into
+  the new Edit / Everyplay Settings menu after upgrading
+
+- Calling Everyplay through the SharedInstance is now deprecated. You may still
+  use the old way, but the recommended way is to call Everyplay.methodName
+
+- Added checkboxes to new Everyplay settings menu for enabling Everyplay per
+  platform (iOS/Android)
+
+- Old test button functionality in Everyplay.prefab has been moved to
+  Plugins/Everyplay/Helpers/EveryplayTest.prefab. A new simplified one can
+  be enabled through Edit / Everyplay Settings menu
+
+### iOS v1.8.0 - May 14th 2014 (build 1801)
 
 - Everyplay now uses Accounts.framework and Facebook SDK for improved,
   seamless Twitter and Facebook login support. If none are linked into
@@ -108,49 +144,7 @@ Everyplay SDK/iOS - Release Notes
 - Fixed EveryplayCapture setLowMemoryDevice property behaviour in
   some rare cases
 
-Everyplay SDK/Android - Release Notes
-=====================================
-
-### v1.1.3 - Aug 27th 2014 (build 1130)
-
-- Some devices and applications had image quality issues/artifacts
-  before video encoding step, fixed
-
-- Starting recording with HUD-less enabled could have caused frame
-  glitch once while starting, fixed
-
-- Fix network retry handling in Everyplay splash screen
-
-- Analytics improvements
-
-### v1.1.2 - June 17th 2014 (build 1120)
-
-- Fixed recording from not working if changing MSAA anti-aliasing
-  state during runtime
-
-- Fixed a potential Qualcomm specific issue with rendering
-  modal share dialog borders
-
-- Improved upload handling
-
-- Improved videoplayer thread safety
-
-### v1.1.1 - May 20th 2014 (build 1110)
-
-- Workaround for ImgTec PowerVR GPU driver behaviour that
-  could cause entire device to freeze after initialization
-
-- Fix videoplayer seeking from causing a crash on some
-  devices with faulty drivers
-
-- Fix for potential video encoding thread hanging on some
-  devices like Samsung Galaxy S3
-
-- Improved sending onEveryplayRecordingStarted listener events
-
-- Add onEveryplayAccountDidChange listener event
-
-### v1.1 - May 14th 2014 (build 1100)
+### Android v1.1 - May 14th 2014 (build 1100)
 
 - Everyplay now uses Facebook SDK for improved, seamless Facebook login support.
   If not linked into the project, the old login convention applies
