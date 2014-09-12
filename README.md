@@ -14,6 +14,22 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1820-1130 - Sep 12th 2014
+
+- Now respects "Symlink Unity Libraries" iOS platform setting for
+  Everyplay.framework
+
+### iOS v1.8.2 - Sep 12th 2014 (build 1820)
+
+- iOS 8 view initialization fixes
+
+- CPU optimizations for games with hard 60fps requirement
+
+- AVFoundation: AVAudioPlayer now supports initWithData: method
+
+- AVFoundation/OpenAL: Backgrounding application during initial splash screen
+  could break audio state handling, fixed
+
 ## Unity 1810-1130 - Aug 27th 2014
 
 - Now supports creating iOS/Xcode project on Windows
