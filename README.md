@@ -14,6 +14,25 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1840-1150 - Oct 9th 2014
+
+### iOS v1.8.4 - Oct 9th 2014 (build 1840)
+
+- Improved avatar photo picker and camera orientation handling
+
+- Improved stereo support for AVFoundation / OpenAL
+
+- OpenAL: Within game code, setting a negative value through
+  alSourcef(x, AL_GAIN, volume) could cause iOS 8 mediaserverd to hang
+  and cause multiple side effects until the device is rebooted, fixed
+
+- everyplayFaceCamRecordingPermission delegate improvements
+
+### Android v1.1.5 - Oct 9th 2014 (build 1150)
+
+- Fixed Facebook sharing to work against Facebook API 2.0
+  and later
+
 ## Unity 1830-1140 - Oct 1st 2014
 
 - Forward compatibility with future Unity releases,
