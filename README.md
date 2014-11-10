@@ -14,6 +14,45 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1901-1160 - Nov 10th 2014
+
+- Now supports iOS 8 Metal graphics for Unity 5 beta
+
+- EveryplayThumbnailPool fixes
+
+### iOS v1.9.0 - Nov 10th 2014 (build 1901)
+
+- First iOS 8 Metal graphics support, no support for Live FaceCam
+  preview box or thumbnail files/textures yet
+
+- Video editor / player core and UI rewritten
+
+- Everyplay.bundle graphics update, using fewer files and less space
+
+- Internal changes for UI theming support
+
+- Landscape support enabled by default for all iPhone views
+
+- New navigation top bar design to give more space while browsing
+
+- Improved memory handling
+
+- Improved analytics
+
+- Fixed thumbnail texture handling on iOS 8
+
+- Improved FaceCam audio and video support and removed deprecated API
+  usage warnings while running on iOS 7+
+
+### Android v1.1.6 - Nov 10th 2014 (build 1160)
+
+- Changes to activity handling in code and on AndroidManifest.xml
+  to fix GPU driver issues and potential crashes
+
+- Improved AAC encoded sound quality
+
+- Improved Facebook behaviour for the future
+
 ## Unity 1840-1150 - Oct 9th 2014
 
 ### iOS v1.8.4 - Oct 9th 2014 (build 1840)
