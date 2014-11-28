@@ -5,6 +5,7 @@ You can always download the latest SDK upgrades directly from https://github.com
 or from the Unity Asset Store: https://www.assetstore.unity3d.com/en/#!/content/16005
 
 Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
+<br />
 Looking for Android version? See https://github.com/everyplay/everyplay-android-sdk
 
 Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.
@@ -13,6 +14,49 @@ Everyplay SDK/Unity - Release Notes
 ===================================
 
 Unity core and platform specific changes (if any) are separated
+
+## Unity 1910-1200 - Nov 28th 2014
+
+- Fix forward compatibility with future Unity releases,
+  including an issue with iOS trampoline changes that
+  could prevent Everyplay UI from showing up
+
+### iOS v1.9.1 - Nov 28th 2014 (build 1910)
+
+- Network access and caching optimizations
+
+- Video seek bar and video ending event fixes for
+  the new video player
+
+- [Everyplay sharedInstance].parentViewController is now a weak pointer
+
+- Improved UI orientation handling
+
+### Android v1.2 - Nov 28th 2014 (build 1200)
+
+- Generic optimizations against new Everyplay community
+
+- New navigation top bar design to give more space while browsing
+
+- Network access and caching optimizations
+
+- Internal changes for UI theming support
+
+- 3rdparty java code is relocated to another package namespace
+  to avoid conflicts
+
+- Performance updates to media merging and trimming
+
+- Everyplay.setMaxRecordingMinutesLength didn't trim the
+  resulting video, fixed
+
+- Fixed potential crash issue with camera photo picker
+
+- Upload performance improvements
+
+- Everyplay.initEveryplay now retains IEveryplayListener
+
+- Try-catch blocks for rare exceptions added
 
 ## Unity 1901-1160 - Nov 10th 2014
 
