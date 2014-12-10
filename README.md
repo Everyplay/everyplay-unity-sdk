@@ -15,11 +15,11 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
-## Unity 1920-1210 - Dec 10th 2014
+## Unity 1921-1210 - Dec 10th 2014
 
 - Fixes iOS compatibility against Unity 4.6.1
 
-### iOS v1.9.2 - Dec 10th 2014 (build 1920)
+### iOS v1.9.2 - Dec 10th 2014 (build 1921)
 
 - [Everyplay initWithDelegate:] improvements
 
