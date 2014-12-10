@@ -15,6 +15,27 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1920-1210 - Dec 10th 2014
+
+- Fixes iOS compatibility against Unity 4.6.1
+
+### iOS v1.9.2 - Dec 10th 2014 (build 1920)
+
+- [Everyplay initWithDelegate:] improvements
+
+- [Everyplay sharedInstance].everyplayDelegate is now a weak pointer
+
+- Minor UI and theming improvements
+
+### Android v1.2.1 - Dec 10th 2014 (build 1210)
+
+- App specific cached files now get removed upon
+  application uninstallation
+
+- Improved caching
+
+- Minor UI and theming improvements
+
 ## Unity 1910-1200 - Nov 28th 2014
 
 - Fix forward compatibility with future Unity releases,
