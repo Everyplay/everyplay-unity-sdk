@@ -15,6 +15,21 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1930-1220 - Dec 16th 2014
+
+- 1921-1210 release broke modal share dialog from appearing
+  on iOS, fixed
+
+### iOS v1.9.3 - Dec 16th 2014 (build 1930)
+
+- Fixed an issue with modal share dialog not appearing
+  on some viewController configurations
+
+### Android v1.2.2 - Dec 16th 2014 (build 1220)
+
+- Fixed a rare ClassNotFoundException with Parcel unable to find
+  com.everyplay.Everyplay.communication.EveryplayResultReceiver
+
 ## Unity 1921-1210 - Dec 10th 2014
 
 - Fixes iOS compatibility against Unity 4.6.1
