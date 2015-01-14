@@ -15,6 +15,32 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1940-1230 - Jan 14th 2015
+
+- Important Android 5 Lollipop fixes, potential graphics
+  performance fixes
+
+### iOS v1.9.4 - Jan 14th 2015 (build 1940)
+
+- Improved Facebook integration by asking server-side
+  configuration status
+
+- Improved AVFoundation/AVAudioPlayer usage against
+  small sound effects
+
+### Android v1.2.3 - Jan 14th 2015 (build 1230)
+
+- Fix a null pointer exception that could cause a crash on some
+  Android 5 Lollipop devices
+
+- Fix a graphics performance issue with glDiscardFramebufferEXT
+  that could affect some Android versions/drivers shipped
+
+- Fix a CORS issue with Android 5 WebResourceResponse
+
+- Improved Facebook integration by asking server-side
+  configuration status
+
 ## Unity 1930-1220 - Dec 16th 2014
 
 - 1921-1210 release broke modal share dialog from appearing
