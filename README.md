@@ -15,6 +15,55 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1950-1240 - Feb 20th 2015
+
+- Regression fix; importing Everyplay package update cleared
+  existing clientId and secret settings
+
+- iOS 8 Metal improvements: Now supports Live FaceCam preview box and using
+  target textures for facecam/thumbnails
+
+- Due to above, few delegates/API calls are now obsoleted and replaced with
+  a generic, less code requiring Texture2D variants that work against
+  GLES/Metal backends
+
+- Code cleanups and C# API usage updates for Unity 5
+
+- Improved Android FAT support
+
+### iOS v1.9.5 - Feb 20th 2015 (build 1950)
+
+- iOS 8 Metal improvements: Now supports Live FaceCam preview box,
+  thumbnail files/textures and using MTLPixelFormatRGBA8Unorm_sRGB
+
+- Now supports OpenAL audio streaming through alSourceQueueBuffers
+
+- Fix a conditition between showing modal share dialog and video editor
+  that could lead to everyplayHidden delegate not properly called, potentially
+  leading to game not being resumed as expected
+
+- Fixed an issue with Cocos2d's scaled graphics on iPhone 6 Plus that prevented
+  the recording from starting properly
+
+- Facebook: Remove use of deprecated publish_stream permission
+
+- Lighter UI theme
+
+### Android v1.2.4 - Feb 20th 2015 (build 1240)
+
+- More Android 5 Lollipop and Android Simulator fixes;
+  null pointer exceptions, activity handling changes
+
+- Fixed an issue with 64bit Android 5 devices that prevented
+  looking up package name properly
+
+- Querying device specific settings now wait until
+  Everyplay.initEveryplay is called
+
+- Facebook: Remove use of deprecated publish_stream permission
+
+- Lighter UI theme
+
 ## Unity 1940-1230 - Jan 14th 2015
 
 - Important Android 5 Lollipop fixes, potential graphics
