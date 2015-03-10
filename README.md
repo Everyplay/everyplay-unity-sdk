@@ -15,6 +15,41 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1950-1300 - Mar 10th 2015
+
+- Major Android graphics performance and stability improvements
+
+### Android v1.3.0 - Mar 10th 2015 (build 1300)
+
+- All-new graphics processing backend for Android 4.3+, improving
+  framerate and stability a lot on many devices
+
+- Greatly improved support for Nvidia GPUs (Tegra 3, Tegra 4, Tegra K1)
+
+- Important AndroidManifest.xml changes to improve overall stability
+  and reduce memory usage. If you're maintaining the manifest manually
+  in your project, please merge the latest changes
+
+- Fixes to potential crashes while using the login activity
+
+- Fixed Javascript binding issues against some Android 4.4.x
+  releases that prevented Everyplay Social views from working
+
+- Fix potential performance issues when used against OpenGL ES3
+
+- On some Android versions, changing to another Activity and returning
+  could have prevented starting of a new recording from working, fixed
+
+- Fixed a GPU driver caused ADB log flood issue; seen on some devices
+  while recording
+
+- Improved image quality on apps with 32-bit color graphics
+
+- Multiple Nexus 10 specific issues fixed
+
+- Now supports Nvidia Shield Portable, Nvidia Shield Tablet
+  and Nexus 9 devices
+
 ## Unity 1950-1240 - Feb 20th 2015
 
 - Regression fix; importing Everyplay package update cleared
