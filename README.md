@@ -15,6 +15,36 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1961-1330 - Apr 28th 2015
+
+- Fixed HUD-less recording to work against multithreaded
+  rendering on Unity 4.6+ and against Unity 5 in general
+
+- Video quality improvements on Android
+
+### iOS v1.9.6 - Apr 28th 2015 (build 1961)
+
+- Metal: Fixed Facecam session handling when reseting
+  session to audio only (1961)
+
+### v1.3.3 - Apr 28th 2015 (build 1330)
+
+- Video quality improvement: On some devices and video codecs,
+  the first second of the recording showed up as bit rotten,
+  garbled output, fixed
+
+- Fixed a graphics width vs stride regression from 1.3.0 SDK that
+  could show up against the new graphics backend on some devices
+  and driver versions, like Nexus 7 running Android 4.4
+
+- On some rare devices, querying video codec info could cause
+  application load times to slow down by 10 seconds, fixed
+
+- Improved Everyplay.snapshotRenderbuffer() aka
+  HUD-less recording feature
+
+- Fix graphics issue with Samsung Galaxy S4 (PowerVR variant)
+
 ## Unity 1960-1320 - Apr 16th 2015
 
 - Fixed a iOS build regression with IL2CPP
