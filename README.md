@@ -27,7 +27,7 @@ Unity core and platform specific changes (if any) are separated
 - Metal: Fixed Facecam session handling when reseting
   session to audio only (1961)
 
-### v1.3.3 - Apr 28th 2015 (build 1331)
+### Android v1.3.3 - Apr 28th 2015 (build 1331)
 
 - Video quality improvement: On some devices and video codecs,
   the first second of the recording showed up as bit rotten,
