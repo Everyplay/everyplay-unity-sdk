@@ -15,6 +15,60 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1970-1340 - May 26th 2015
+
+- iOS Metal: Graphics performance and memory usage optimizations,
+  also fixed a small memory leak that happened on every frame
+  even while not recording
+
+- iOS Metal: Now supports HUD-less recording support through
+  Everyplay.snapshotRenderbuffer();
+
+- Removed use of IDFA / AdSupport.framework dependency
+
+### iOS v1.9.7 - May 26th 2015 (build 1970)
+
+- Metal: Graphics performance and memory usage optimizations
+
+- Metal: Fixed a small memory leak that happened on every frame
+  even while not recording
+
+- Metal: Now supports HUD-less recording feature through
+  [[[Everyplay sharedInstance] capture] snapshotRenderbuffer];
+
+- Removed IDFA related code (AdSupport.framework), now uses IFV
+
+- Removed EveryplaySoundEngine, OpenAL and AVFoundation implementations.
+  Now uses Apple's high performance implementations when available
+
+- Removed legacy OpenGL graphics integration API's from EveryplayCapture
+
+- Removed support for file based thumbnails. If you use thumbnails,
+  switch to texture based implementation
+
+- Removed [Everyplay initWithDelegate:andAddRootViewControllerForView:]
+  It was a helper for older world iOS apps that didn't implement
+  UIViewController. Today, it's safe to assume that your code has them
+
+- Increased the default video bitrate quality a bit
+
+- Fixed a potential audio encoder memory leak while recording
+
+### Android v1.3.4 - May 26th 2015 (build 1340)
+
+- More video quality improvements for some devices
+
+- Workaround a driver issue with Qualcomm Adreno 420's that
+  caused a crash in some situations
+
+- Fix graphics issue with Samsung Galaxy S5
+
+- Removed support for file based thumbnails. If you use thumbnails,
+  switch to texture based implementation
+
+- Improved error handling on some situations where the video files
+  could end up invalid, potentially causing a crash
+
 ## Unity 1961-1332 - Apr 29th 2015
 
 - Fixed HUD-less recording to work against multithreaded
