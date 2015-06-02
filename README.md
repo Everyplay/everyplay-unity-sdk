@@ -15,6 +15,29 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1970-1350 - June 2nd 2015
+
+- Android: Now supports Android M preview and adds
+  a failsafe mode to protect from repeating crashes
+
+- More Qualcomm Adreno 420 GPU fixes
+
+### Android v1.3.5 - June 2nd 2015 (build 1350)
+
+- New feature: Failsafe mode. If there's a crash during early
+  initialization of Everyplay, the recording support will be
+  disabled when the application is launched the next time
+
+  Since the bug might be OS/driver related, the need for Failsafe
+  mode is re-evaluated each time the SDK or OS has been upgraded
+  or the application is removed
+
+- Now supports Android M preview and fixes a crash against it.
+  Older SDKs are disabled from recording against Android M
+
+- More Qualcomm Adreno 420 crash fixes for some devices, like
+  Samsung Galaxy Note 4
+
 ## Unity 1970-1340 - May 26th 2015
 
 - iOS Metal: Graphics performance and memory usage optimizations,
