@@ -15,6 +15,58 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1980-1400 - June 29th 2015
+
+- Now allows 60fps recordings on iOS and Android
+
+  To change the target framerate from the default 30fps,
+  call Everyplay.SetTargetFPS()
+
+- Improved frame synchronization and framerate handling
+
+- Removed Everyplay.SetThumbnailWidth method
+
+- Removed ThumbnailReadyAtFilePathDelegate
+
+### iOS v1.9.8 - Jun 29th 2015 (build 1980)
+
+- Now allows 60fps recordings on iOS 8+ devices with
+  A7 CPU or later (devices with 64bit capability)
+
+  To change the target framerate from the default 30fps, call
+  [[Everyplay sharedInstance] capture].targetFPS
+
+- Metal: CPU performance and snapshotRenderbuffer improvements
+
+- Live FaceCam: When the internal preview box is hidden and
+  a target texture is in use, the video content is no longer
+  encoded to a separate file and doesn't show separately in
+  the video player
+
+- Removed thumbnailWidth property from EveryplayCapture
+
+- Removed file based everyplayThumbnailReadyAt(FilePath|URL): delegates
+
+### Android v1.4.0 - June 29th 2015 (build 1400)
+
+- Now allows 60fps recordings on Android 4.4+ devices
+
+  To change the target framerate from the default 30fps,
+  call Everyplay.setTargetFPS()
+
+- Improved frame synchronization and framerate handling
+
+- Fixed an audio issue with FMOD Studio that
+  could have resulted to a silent recording
+
+- Removed setThumbnailWidth method from Everyplay class
+
+- Removed onEveryplayThumbnailReadyAtFilePath from IEveryplayListener
+
+- Fixed an issue with PowerVR GPUs and continuous recording feature:
+  If recording over 5 minutes while using setMaxRecordingMinutesLength,
+  the device could freeze, fixed
+
 ## Unity 1970-1350 - June 2nd 2015
 
 - Android: Now supports Android M preview and adds
