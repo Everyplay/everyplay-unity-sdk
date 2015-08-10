@@ -15,6 +15,27 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 1990-1410 - Aug 10th 2015
+
+- Critical update for iOS 9 App Transport Security (ATS)
+  compatibility
+
+- Removed ThumbnailLoadReadyDelegate and LoadThumbnailFromFilePath
+
+- Windows Phone build fix for EveryplayRecButtons.cs
+
+### iOS v1.9.9 - Aug 10th 2015 (build 1990)
+
+- Critical update for iOS 9 App Transport Security (ATS)
+  compatibility
+
+- Fixed iOS 9 SpriteKit inverted graphics issue when
+  running on a device that uses Metal
+
+### Android v1.4.1 - Aug 10th 2015 (build 1410)
+
+- Minor bugfixes
+
 ## Unity 1980-1400 - June 29th 2015
 
 - Now allows 60fps recordings on iOS and Android
