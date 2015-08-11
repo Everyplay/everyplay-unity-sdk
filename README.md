@@ -32,6 +32,9 @@ Unity core and platform specific changes (if any) are separated
 - Fixed iOS 9 SpriteKit inverted graphics issue when
   running on a device that uses Metal
 
+- Fixed on audio issue with continuous recording when
+  the session lifetime exceeds 5 minutes
+
 ### Android v1.4.1 - Aug 10th 2015 (build 1410)
 
 - Minor bugfixes
