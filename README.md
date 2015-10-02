@@ -15,6 +15,48 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2000-1500 - Oct 2nd 2015
+
+- Fixes to Xcode 7 / iOS 9 / Bitcode compatibility
+
+- Fixes Metal support against Unity 5.2
+
+- Now implements FaceCam for Android
+
+### iOS v2.0 - Oct 1st 2015 (build 2000)
+
+- Metal: Fixes a scenario with recent Unity 5.2 release,
+  where running the app within Xcode works for recording,
+  but doesn't record when launched without Xcode
+
+- Metal: Frame synchronization and snapshotRenderbuffer
+  improvements
+
+- Now built with Xcode 7 and Bitcode support enabled
+
+- Removed CFBundleExecutable from Everyplay.bundle/Info.plist,
+  that causes app submit error with Xcode 7
+
+- Due to Bitcode requirements, iOS 5 support is now dropped
+
+- Fixes a rare crash with data prefetch and session handling
+
+- Improve logout behaviour for Facebook/Twitter accounts,
+  allowing to use different accounts
+
+### Android v1.5 - Oct 1st 2015 (build 1500)
+
+- Live FaceCam and adding FaceCam commentary track within
+  the video editor are now implemented, requires Android 4.3+
+
+- AndroidManifest.xml permission changes related to FaceCam
+  added by default. If you don't want to support Live FaceCam
+  or post-gameplay video editor commentary through FaceCam,
+  you can remove the following options:
+
+  - uses-permission: android.permission.CAMERA, android.permission.RECORD_AUDIO
+  - uses-feature: android.hardware.camera, android.hardware.camera.autofocus
+
 ## Unity 1990-1410 - Aug 10th 2015
 
 - Critical update for iOS 9 App Transport Security (ATS)
