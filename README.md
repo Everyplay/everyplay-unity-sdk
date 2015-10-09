@@ -15,6 +15,41 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2010-1510 - Oct 9th 2015
+
+- Fixes to iPhone 6S audio support
+
+- Fixes for generic iOS 9 audio support
+
+- Android Live FaceCam improvements
+
+### iOS v2.0.1 - Oct 9th 2015 (build 2010)
+
+- Fixed audio glitch issue against the new iPhone 6S
+
+  iPhone 6S prevents hardware sample rate to change from the
+  default 48kHz in some situations, causing trouble with
+  certain audio processing libraries. In older releases,
+  this may appear as repeated clicking sound within the
+  recording
+
+- Fix iOS 9 audio compatibility issues with OpenAL
+  and AVFoundation's AVAudioPlayer/AVAudioEngine
+
+  Older releases than 1.9.7 may work, but an upgrade is
+  recommended due to iPhone 6S issues mentioned above
+
+- Workaround AVAudioPlayer related issue with volume
+  fade control
+
+### Android v1.5.1 - Oct 9th 2015 (build 1510)
+
+- Fix Live FaceCam camera session handling when
+  coming back to the application
+
+- Failsafe mode no longer triggers too easily by
+  loading the application and exiting immediately
+
 ## Unity 2000-1500 - Oct 2nd 2015
 
 - Fixes to Xcode 7 / iOS 9 / Bitcode compatibility
@@ -23,7 +58,7 @@ Unity core and platform specific changes (if any) are separated
 
 - Now implements FaceCam for Android
 
-### iOS v2.0 - Oct 1st 2015 (build 2000)
+### iOS v2.0 - Oct 2nd 2015 (build 2000)
 
 - Metal: Fixes a scenario with recent Unity 5.2 release,
   where running the app within Xcode works for recording,
@@ -44,7 +79,7 @@ Unity core and platform specific changes (if any) are separated
 - Improve logout behaviour for Facebook/Twitter accounts,
   allowing to use different accounts
 
-### Android v1.5 - Oct 1st 2015 (build 1500)
+### Android v1.5 - Oct 2nd 2015 (build 1500)
 
 - Live FaceCam and adding FaceCam commentary track within
   the video editor are now implemented, requires Android 4.3+
