@@ -15,6 +15,43 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2100-1520 - Dec 21st 2015
+
+### iOS v2.1 - Dec 18th 2015 (build 2100)
+
+- Internal refactoring of all graphics related code
+
+- Now defaults to 60fps recording, previously optional
+
+- Improved frame synchronization
+
+- Improved view transition controller logic
+
+- Improvements to Live FaceCam recording modes
+
+- Metal: Fixed sRGB support
+
+- Metal: Improves iPad Pro support on certain cases
+  like with SpriteKit on iOS 9
+
+- Metal: Improves support for recording content that
+  allows both portrait and landscape modes
+
+- GLES: Added additional graphics state validation to
+  see if recording content can cause problems, like
+  black screen happening while recording. Fixes
+  SpriteKit behaviour on iOS 9 when used with GLES
+
+- Improved audio related handling with pausing/resuming
+  recording in cases where there are no audio sources
+  to record
+
+### Android v1.5.2 - Dec 18th 2015 (build 1520)
+
+- Fixes an audio related crash with FMODAudioDevice
+
+- FaceCam improvements
+
 ## Unity 2010-1510 - Oct 9th 2015
 
 - Fixes to iPhone 6S audio support
