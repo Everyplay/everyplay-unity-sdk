@@ -17,7 +17,7 @@ Unity core and platform specific changes (if any) are separated
 
 ## Unity 2100-1520 - Dec 21st 2015
 
-### iOS v2.1 - Dec 18th 2015 (build 2100)
+### iOS v2.1 - Dec 21th 2015 (build 2100)
 
 - Internal refactoring of all graphics related code
 
@@ -46,7 +46,7 @@ Unity core and platform specific changes (if any) are separated
   recording in cases where there are no audio sources
   to record
 
-### Android v1.5.2 - Dec 18th 2015 (build 1520)
+### Android v1.5.2 - Dec 21th 2015 (build 1520)
 
 - Fixes an audio related crash with FMODAudioDevice
 
