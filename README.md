@@ -15,6 +15,26 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2110-1530 - Jan 27th 2016
+
+- Fixed building with Unity 4.7
+
+- Added a checkbox to enable/disable the early initializer
+
+- Fixed an harmless shader compilation notice on Unity 5.x
+
+- Added an utility function to check if ready for recording
+
+### v2.1.1 - Jan 27th 2016 (build 2110)
+
+- Fixed application freezing when returning from background on iOS when using OpenGL ES
+
+- Fixed compilation to work with xCode6
+
+### v1.5.3 - Jan 27th 2016 (build 1530)
+
+- Fixed a regression that caused flickering on some devices when using HUD-less recording
+
 ## Unity 2100-1520 - Dec 21st 2015
 
 ### iOS v2.1 - Dec 21th 2015 (build 2100)
