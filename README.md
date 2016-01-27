@@ -25,13 +25,13 @@ Unity core and platform specific changes (if any) are separated
 
 - Added an utility function to check if ready for recording
 
-### v2.1.1 - Jan 27th 2016 (build 2110)
+### iOS v2.1.1 - Jan 27th 2016 (build 2110)
 
 - Fixed application freezing when returning from background on iOS when using OpenGL ES
 
 - Fixed compilation to work with xCode6
 
-### v1.5.3 - Jan 27th 2016 (build 1530)
+### Android v1.5.3 - Jan 27th 2016 (build 1530)
 
 - Fixed a regression that caused flickering on some devices when using HUD-less recording
 
