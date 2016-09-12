@@ -15,6 +15,44 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2120-1540 - Sep 12th 2016
+
+- Fixed the XCode project export when using Unity 5.4 and the destination is inside Unity project folder
+
+- Added a method SetMaxRecordingSecondsLength for setting the max recording length in seconds
+
+- Fixed IsReadyForRecording state when the user has not subscribed to the ReadyForRecording event
+
+- Replaced deprecated GetNativeTextureId() usage with GetNativeTexturePtr()
+
+- Added a custom unique id to the Everyplay game object's name to avoid conflicts with game object named "Everyplay"
+
+- Removed legacy support (calling Everyplay using SharedInstance)
+
+- Cleaned up some JSON parsing related code
+
+### iOS v2.1.2 - Sep 12th 2016
+
+- Now supports iOS 10
+
+- Fixed a small iOS 9 specific memory leak
+
+- Added a property maxRecordingSecondsLength for setting the max recording length in seconds
+
+- Fixed running with XCode address sanitizer
+
+### Android v1.5.4 - Sep 12th 2016
+
+- Recording on Android N has been temporarily disabled. It will be activated on the upcoming SDK release.
+
+- Added a method SetMaxRecordingSecondsLength for setting the max recording length in seconds
+
+- Audio recording improvements
+
+- Fixed a bug where recording was disabled after the first time on some devices
+
+- Fixed a crash when uploading video link to Google Drive
+
 ## Unity 2110-1530 - Jan 27th 2016
 
 - Fixed building with Unity 4.7
