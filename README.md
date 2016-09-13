@@ -15,6 +15,12 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2121-1540 - Sep 13th 2016
+
+### iOS v2.1.2 (build 2121)
+
+- Replace expiration date dialog with log message
+
 ## Unity 2120-1540 - Sep 12th 2016
 
 - Fixed the XCode project export when using Unity 5.4 and the destination is inside Unity project folder
