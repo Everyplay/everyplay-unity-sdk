@@ -21,11 +21,11 @@ Unity core and platform specific changes (if any) are separated
 
 - Fixed App Store submission issue
 
-### v2.1.3 - Oct 31st 2016 (build 2130)
+### iOS v2.1.3 - Oct 31st 2016 (build 2130)
 
 - Fixed social media login on iOS 10 devices
 
-### v1.5.5 - Oct 31st 2016 (build 1550)
+### Android v1.5.5 - Oct 31st 2016 (build 1550)
 
 - Improved failsafe mechanism
 
