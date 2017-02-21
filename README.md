@@ -15,6 +15,28 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2140-1560 - Feb 14th 2017
+
+- Removed compilation warnings when using Unity 5.5.0
+
+- Removed obsolete functions 
+
+- Android Support library is now required and provided with the SDK delivery
+
+### iOS v2.1.4 - Feb 14th 2017
+
+- Improved ATS compliance
+
+- OpenAL fix on A5 devices
+
+### Android v1.5.6 - Feb 14th 2017
+
+- Live permissions support
+
+- Android N API compliance improvements
+
+- Improved compatibility with AudioTrack
+
 ## Unity 2130-1550 - Oct 31st 2016
 
 - Fixed HUD-less recording regression
