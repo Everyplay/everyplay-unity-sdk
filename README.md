@@ -15,6 +15,14 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2140-1561 - Mar 1st 2017 
+
+- Removed deprecated EveryplayLegacy.cs 
+
+- Fixed Gradle project export with Unity 5.5 
+
+### Android v1.5.6-1561 - Mar 1st 2017 - Gradle build file fixes
+
 ## Unity 2140-1560 - Feb 14th 2017
 
 - Removed compilation warnings when using Unity 5.5.0
