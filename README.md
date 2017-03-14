@@ -21,7 +21,9 @@ Unity core and platform specific changes (if any) are separated
 
 - Fixed Gradle project export with Unity 5.5 
 
-### Android v1.5.6-1561 - Mar 1st 2017 - Gradle build file fixes
+### Android v1.5.6-1561 - Mar 1st 2017 
+
+- Gradle build file fixes
 
 ## Unity 2140-1560 - Feb 14th 2017
 
