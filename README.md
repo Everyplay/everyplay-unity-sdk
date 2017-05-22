@@ -15,13 +15,35 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
-## Unity 2140-1561 - Mar 1st 2017 
+## Unity 2150-1570 - May 22nd 2017
 
-- Removed deprecated EveryplayLegacy.cs 
+- Android build fixes
 
-- Fixed Gradle project export with Unity 5.5 
+- Fixed ready for recording event on Unity 5.5.2 and newer
 
-### Android v1.5.6-1561 - Mar 1st 2017 
+- GLES: Fixed thumbnail ready event
+
+### iOS v2.1.5 - May 22nd 2017
+
+- Metal recording improvements
+
+### Android v1.5.7 - May 22nd 2017
+
+- Removed dependency to support lib
+
+- Disabled incompatible Huawei Kirin based devices for now
+
+- Better Gradle compatibility (2.2.0)
+
+- Gradle build fix for Windows
+
+## Unity 2140-1561 - Mar 1st 2017
+
+- Removed deprecated EveryplayLegacy.cs
+
+- Fixed Gradle project export with Unity 5.5
+
+### Android v1.5.6-1561 - Mar 1st 2017
 
 - Gradle build file fixes
 
@@ -29,7 +51,7 @@ Unity core and platform specific changes (if any) are separated
 
 - Removed compilation warnings when using Unity 5.5.0
 
-- Removed obsolete functions 
+- Removed obsolete functions
 
 - Android Support library is now required and provided with the SDK delivery
 
