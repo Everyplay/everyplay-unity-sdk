@@ -15,6 +15,18 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2160-1580 - June 13th 2017
+
+- Fixed Google login and YouTube sharing on iOS and Android
+
+### iOS v2.1.6 - June 13th 2017
+
+- Fixed Google login and YouTube sharing
+
+### Android v1.5.8 - June 13th 2017
+
+- Fixed Google login and YouTube sharing
+
 ## Unity 2150-1570 - May 22nd 2017
 
 - Android build fixes
