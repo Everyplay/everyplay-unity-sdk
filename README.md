@@ -15,6 +15,24 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2170-1590 - Sep 8th 2017
+
+- Added warning about HUD-less functionality being no longer maintained
+
+### iOS v2.1.7 - Sep 8th 2017
+
+- Improved Twitter login compatibility
+
+### Android v1.5.9 - Sep 7th 2017
+
+- Enabled recording on 32bit Huawei Kirin devices
+
+- Fixed Samsung S8 recording
+
+- Fixed Android O audio recording
+
+- Fixed YouTube sharing
+
 ## Unity 2160-1580 - June 13th 2017
 
 - Fixed Google login and YouTube sharing on iOS and Android
