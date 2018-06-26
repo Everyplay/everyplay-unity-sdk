@@ -1,19 +1,39 @@
-Welcome to Everyplay. To get started, make sure you have an account registered, and that you have a unique client ID
-for your game. You can get these along with the latest integration instructions at https://developers.everyplay.com/
+Goodbye Everyplay. This project has been discontinued.
 
-You can always download the latest SDK upgrades directly from https://github.com/everyplay/everyplay-unity-sdk
-or from the Unity Asset Store: https://www.assetstore.unity3d.com/en/#!/content/16005
+Last iOS release: https://github.com/everyplay/everyplay-ios-sdk
 
-Looking for iOS version? See https://github.com/everyplay/everyplay-ios-sdk
-<br />
-Looking for Android version? See https://github.com/everyplay/everyplay-android-sdk
+Last Android release: https://github.com/everyplay/everyplay-android-sdk
 
-Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.
+Last Unity release: https://github.com/everyplay/everyplay-unity-sdk
+
+Everyplay SDK is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) with restrictions. ~~Please see Everyplay Terms of Service at https://everyplay.com/developer-terms-of-service for more information.~~
 
 Everyplay SDK/Unity - Release Notes
 ===================================
 
 Unity core and platform specific changes (if any) are separated
+
+## Unity 2200-1600 - Jun 26th 2018
+
+- Changed Everyplay.ShowSharingModal() to open native share sheet instead of Everyplay Sharing Modal
+- Added Everyplay.GetFilepath() to get path to the recorded file (see USAGE.md)
+
+### iOS v2.2.0 - Jun 26th 2018
+
+- Removed social functionality
+- Changed [[Everyplay sharedInstance] showEveryplaySharingModal] to open native share sheet instead of Everyplay Sharing Modal
+- Added [[Everyplay sharedInstance] getEveryplayFilepath] to get path to the recorded file (see USAGE.md)
+- Metal recording fixes
+
+### Android v1.6.0 - Jun 26th 2018
+
+- Removed social functionality
+- Changed Everyplay.showEveryplaySharingModal() to open native share sheet instead of Everyplay Sharing Modal
+- Added Everyplay.getFilePath() to get path to the recorded file (see USAGE.md)
+- Updated buildtools version 
+- Gradle fixes
+- 64-bit Huawei fixed
+- Qualcomm 8xxx/Adreno series fixed (Samsung s8,s8+,s9,s9+...)
 
 ## Unity 2170-1590 - Sep 8th 2017
 
