@@ -13,6 +13,12 @@ Everyplay SDK/Unity - Release Notes
 
 Unity core and platform specific changes (if any) are separated
 
+## Unity 2210-1600 - Jul 30th 2018
+
+### iOS v2.2.1 - Jul 30th 2018
+
+- Metal recording fixes
+
 ## Unity 2200-1600 - Jun 26th 2018
 
 - Changed Everyplay.ShowSharingModal() to open native share sheet instead of Everyplay Sharing Modal
